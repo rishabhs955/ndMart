@@ -64,6 +64,7 @@ export const getGadgetsCategory = createAsyncThunk(
   "products/getGadgetsCategory",
   async (data: string, thunkAPI) => {
     try {
+      console.warn(data);
       return await productService.getGadgetsCategory();
     } catch (error) {
       return thunkAPI.rejectWithValue(error);

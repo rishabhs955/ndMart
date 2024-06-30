@@ -1,6 +1,5 @@
 import { NavLink, Link } from "react-router-dom";
 import { RiSearch2Line } from "react-icons/ri";
-import { RiUserLine } from "react-icons/ri";
 import styles from "./index.module.scss";
 import { navData } from "../../../../../data/navItems";
 import CartIcon from "./CartIcon";
