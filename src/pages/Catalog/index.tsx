@@ -82,7 +82,9 @@ const Catalog = () => {
       <div className={styles.productList}>
         {products &&
           products?.map((product, index) => {
-            const actualPrice = getActualPrice(product.price);
+            const actualPrice = getActualPrice(
+              product.price ? product.price : -1
+            );
             if (product.category != "electronics")
               return (
                 <ProductCard

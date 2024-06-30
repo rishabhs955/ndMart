@@ -90,7 +90,9 @@ const QuickView = () => {
         </div>
         <div className={styles.productList}>
           {products?.slice(0, 8)?.map((product, index) => {
-            const actualPrice = getActualPrice(product.price);
+            const actualPrice = getActualPrice(
+              product.price ? product.price : -1
+            );
 
             if (product.category != "electronics")
               return (
